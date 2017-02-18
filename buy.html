@@ -2,13 +2,13 @@
 <html>
     <head>
         <title>PC WORLD</title>
-        <link rel="icon" type="image/ico" href="/Img/pc-logo.ico" /> 
+        <link rel="icon" type="image/ico" href="Img/pc-logo.ico" /> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Css/General.css">
         <link rel="stylesheet" href="Css/Bootstrap/bootstrap.min.css">
         <script src="Js/Jquery/jquery-3.1.1.min.js"></script>
-        <script src="/Js/Bootstrap/bootstrap.min.js"></script>
+        <script src="Js/Bootstrap/bootstrap.min.js"></script>
         <script src="Js/funtions.js"></script>
         <script src="Js/data.js"></script>
     </head>
@@ -31,7 +31,7 @@
                 <li><a href="about.html">Acerca de</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
               </ul>
             </div>
           </div>
@@ -41,14 +41,16 @@
             <div class="col-sm-2 sidenav">
               <div class="well">
                 <p>
-                    <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+                    <button type="button" class="btn btn-secondary btn-sm" onclick="ShowTable(procesors)">Procesadores</button>
+                    <button type="button" class="btn btn-secondary btn-sm" onclick="ShowTable(motherboards)">Placas Base</button>
+                    <button type="button" class="btn btn-secondary btn-sm" onclick="ShowTable(grafics)">Tarjetas Gráficas</button>
                 </p>
               </div>
             </div>
-            <div class="col-sm-8 text-left">
+            <div class="col-sm-8 text-left text-center">
               <h1>Productos.</h1>
                 <p>
-                    <div id="table"></div>
+                    <div id="table" class="text-center"></div>
                 </p>
               <hr>
               <h3>Ayuda:</h3>
@@ -56,7 +58,26 @@
             </div>
             <div class="col-sm-2 sidenav">
               <div class="well">
-                <p>Anuncioafffdssfsdfds</p>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="Img/Publicidad/rellenonaruto2.jpg" alt="Image">    
+                      </div>
+
+                      <div class="item">
+                        <img src="Img/Publicidad/Wallizq.jpg" alt="Image">
+                        <div class="carousel-caption">
+                        </div>      
+                      </div>
+                    </div>
+                </div>
               </div>
             </div>
           </div>

@@ -2,13 +2,15 @@
 <html>
     <head>
         <title>PC WORLD</title>
-        <link rel="icon" type="image/ico" href="/Img/pc-logo.ico" /> 
+        <link rel="icon" type="image/ico" href="Img/pc-logo.ico" /> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Css/General.css">
         <link rel="stylesheet" href="Css/Bootstrap/bootstrap.min.css">
         <script src="Js/Jquery/jquery-3.1.1.min.js"></script>
-        <script src="/Js/Bootstrap/bootstrap.min.js"></script>
+        <script src="Js/Bootstrap/bootstrap.min.js"></script>
+        <script src="Js/funtions.js"></script>
+        <script src="Js/data.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-inverse">
@@ -38,19 +40,58 @@
           <div class="row content">
             <div class="col-sm-2 sidenav">
               <div class="well">
-                <p>Anuncio</p>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="Img/Publicidad/rellenonaruto.jpg" alt="Image">
+                        <div class="carousel-caption">
+                        </div>      
+                      </div>
+                      <div class="item">
+                        <img src="Img/Publicidad/Wallderecha.jpg" alt="Image">
+                        <div class="carousel-caption">
+                        </div>      
+                      </div>
+                    </div>
+                </div>
               </div>
             </div>
             <div class="col-sm-8 text-left"> 
               <h1>Configurador</h1>
-              <p>Ejemplo bla bla</p>
+              <p><div id="Formulario"></div></p>
               <hr>
               <h3>más</h3>
               <p>bla bla...</p>
             </div>
             <div class="col-sm-2 sidenav">
               <div class="well">
-                <p>Anuncio</p>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="Img/Publicidad/rellenonaruto2.jpg" alt="Image">    
+                      </div>
+
+                      <div class="item">
+                        <img src="Img/Publicidad/Wallizq.jpg" alt="Image">
+                        <div class="carousel-caption">
+                        </div>      
+                      </div>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
@@ -59,4 +100,5 @@
           <p>Footer y su texto</p>
         </footer>
     </body>
+    <script>CreateConnfigurator(procesors, motherboards, grafics)</script>
 </html>
