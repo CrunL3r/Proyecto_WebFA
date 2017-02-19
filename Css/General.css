@@ -15,7 +15,7 @@
 }
 /* Color de fondo negro, texto blanco y un poco de relleno para el footer */
 footer {
-    background-color: #555;
+    background-color: #000000; /*#555*/
     color: white;
     padding: 15px;
 }
@@ -34,7 +34,7 @@ footer {
       margin: auto;
       min-height:100px;
         max-height: 150px;
-  }
+    }
 }
 
 .google-maps {
@@ -48,10 +48,36 @@ footer {
     top: 0;
     left: 0;
     width: 100% !important;
-    height: 70% !important;
+    height: 60% !important;
 }
 .carousel-inner img {
       width: 100%; /* Set width to 100% */
       margin: auto;
       min-height:300px;
   }
+.imgr{
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+span{ 
+    font-weight: bold;
+    font-family: cursive;
+}
+p{
+    text-align: left;
+    font-family: cursive;
+}
+h4{
+    text-align: left;
+    font-family: cursive;
+}
+
+h1{
+    font-family: cursive;
+}
+
+@font-face {
+    font-family: 'Rancho', cursive;
+    src: url(Css/font/Rancho-Regular.ttf);
+}
